@@ -29,6 +29,7 @@ public class CreateEnemyMenuItem : MonoBehaviour
         targetEnemyUnit.transform.localPosition = nextPosition;
         targetEnemyUnit.transform.localScale = new Vector2(0.7f, 0.7f);
         targetEnemyUnit.GetComponent<Button>().onClick.AddListener(() => selectEnemyTarget());
+
         killEnemyScript.menuItem = targetEnemyUnit;
     }
 

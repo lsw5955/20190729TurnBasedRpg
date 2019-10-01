@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6801419584685113209
+--- !u!1 &5226571459706463926
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2147549214358976030}
-  - component: {fileID: 2222334671123682447}
-  - component: {fileID: 1505583318086649161}
-  - component: {fileID: 2256134836360970451}
-  - component: {fileID: -2537422620667131620}
-  - component: {fileID: 1256399216961169824}
+  - component: {fileID: 5226571459706463927}
+  - component: {fileID: 5226571459706463924}
+  - component: {fileID: 5226571459706463925}
+  - component: {fileID: -2407923251906289275}
   m_Layer: 0
-  m_Name: EnemyUnitPfb
-  m_TagString: EnemyUnit
+  m_Name: WarriorUnitPfb
+  m_TagString: PlayerUnit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2147549214358976030
+--- !u!4 &5226571459706463927
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6801419584685113209}
+  m_GameObject: {fileID: 5226571459706463926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.83, y: 1.59, z: 0.6017717}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5, y: -0.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.6408746}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2222334671123682447
+--- !u!212 &5226571459706463924
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6801419584685113209}
+  m_GameObject: {fileID: 5226571459706463926}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,77 +70,46 @@ SpriteRenderer:
   m_SortingLayerID: -619953199
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 568afcd578cf0804699e5a55a488e05b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.875, y: 3.8125}
+  m_Size: {x: 6.4375, y: 6.031476}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1505583318086649161
+--- !u!114 &5226571459706463925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6801419584685113209}
+  m_GameObject: {fileID: 5226571459706463926}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 09d58d2bc24c5bf4699d034e5f497c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
-  mana: 10
-  attack: 15
-  magic: 5
-  defense: 5
-  speed: 10
---- !u!114 &2256134836360970451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6801419584685113209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4ef2e75d1af6014fac5239dd4da26da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuItem: {fileID: 5749093887751940184, guid: 5aabe254526876f4eb1eea0d23776bd9,
-    type: 3}
---- !u!114 &-2537422620667131620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6801419584685113209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01416a8065c4a2a4f9025f3ea59d5318, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetEnemyUnitPrefab: {fileID: 6801419584685113209}
-  menuItemSprite: {fileID: 21300000, guid: 4cf6bc30276243b45a79b13a78846877, type: 3}
-  initialPosition: {x: 0, y: 0}
-  itemDimensions: {x: 0, y: 0}
-  killEnemyScript: {fileID: 2256134836360970451}
---- !u!95 &1256399216961169824
+  health: 100
+  mana: 100
+  attack: 10
+  magic: 0
+  defense: 10
+  speed: 0
+--- !u!95 &-2407923251906289275
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6801419584685113209}
+  m_GameObject: {fileID: 5226571459706463926}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a119b56cde038d4c856cf9fb23495e9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4ae1539104beef649bd2283202ba62e9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
